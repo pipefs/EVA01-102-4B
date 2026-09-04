@@ -1,10 +1,11 @@
+from vehiculo import Vehiculo
+
 class Automotora:
-
-    def __init__(self, nombre):
+    def __init__(self, nombre : str):
         self.nombre = nombre
-        self.vehiculos = []
+        self.vehiculos : list[Vehiculo] = []
 
-    def agregarVehiculo(self, vehiculo):
+    def agregarVehiculo(self, vehiculo : Vehiculo):
         self.vehiculos.append(vehiculo)
 
     def mostrarVehiculos(self):
